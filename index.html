@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Kacper Łotowski</h1>
+            <ul>
+                <li><a data-page="cogito" href="#cogito">Cogito</a></li>
+                <li><a data-page="video" href="#video">Video</a></li>
+                <li><a data-page="audio" href="#audio">Audio</a></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cogito" data-index="0" class="cogito">
+            <div class="dictionary">            
+                <h2>Cogito</h2>
+                <p>[ˈkoː.ɡɪ.toː] <i>(verb)</i></p>
+                <p><i>I think, I plan</i></p>
+            </div>
+            <div id="hidden-cogito">
+                <img src="Media/Cogito1.jpg" class="grid-fit" id="profile-pic" />
+            </div>    
+        </section>
+        <section id="video" data-index="1" class="video">
+            <div class="dictionary">            
+                <h2>Video</h2>
+                <p>[ˈwɪ.d̪e.oː] <i>(verb)</i></p>
+                <p><i>I see</i></p>
+        </section>
+        <section id="audio" data-index="2" class="audio">
+            <div class="dictionary">            
+                <h2>Audio</h2>
+                <p>[ˈau̯.d̪i.oː] <i>(verb)</i></p>
+                <p><i>I hear</i></p>
+    <script src="./app.js"></script>
+</body>
