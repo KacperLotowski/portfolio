@@ -42,20 +42,24 @@ function unhide() {
     
     let hiddenCogito = document.getElementById('hidden-cogito');
     let dictionaryCogito = document.getElementsByClassName('dictionary')[0];
-    // let unhideVideo = document.getElementById('hidden-video');
-    // let hoverVideo = document.getElementsByClassName('dictionary')[0];
+    let hiddenVideo = document.getElementById('hidden-video');
+    let dictionaryVideo = document.getElementsByClassName('dictionary')[1];
     // let unhideAudio = document.getElementById('hidden-audio');
     // let hoverAudio = document.getElementsByClassName('dictionary')[0];
 
     dictionaryCogito.addEventListener('mouseenter', () => {
-        hiddenCogito.style.opacity = '1';
+        hiddenCogito.style.opacity = '1'
         hiddenCogito.style.background = "linear-gradient(to right top, #0f6596, #20257d)"
     });
     dictionaryCogito.addEventListener('mouseleave', () => {
         hiddenCogito.style.opacity = '0'
     });
-    // hoverVideo.addEventListener('mouseenter', () => {unhideCogito.style.zIndex = '1'; unhideVideo.style.opacity = '1'});
-    // hoverVideo.addEventListener('mouseleave', () => {unhideCogito.style.zIndex = '0'; unhideVideo.style.opacity = '0'});
+    dictionaryVideo.addEventListener('click', () => {
+        hiddenVideo.style.opacity = '1'
+        hiddenVideo.style.zIndex = '1'
+        hiddenVideo.play()
+    });
+
     // hoverAudio.addEventListener('mouseenter', () => {unhideCogito.style.zIndex = '1'; unhideAudio.style.opacity = '1'});
     // hoverAudio.addEventListener('mouseleave', () => {unhideCogito.style.zIndex = '0'; unhideAudio.style.opacity = '0'});
 

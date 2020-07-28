@@ -80,6 +80,7 @@ section {
 
 .dictionary {
     z-index: 1;
+    cursor: pointer
 }
 
 
@@ -127,8 +128,8 @@ section p {
 }
 
 #hidden-cogito {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     display: grid;
     grid-template-columns: 2vw 1fr 1fr 1fr 1fr 1fr 1fr 2vw;
@@ -141,4 +142,15 @@ section p {
 
 #profile-pic {
     grid-area: 2 / 2 / 5 / 4;
+}
+
+
+
+#hidden-video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
