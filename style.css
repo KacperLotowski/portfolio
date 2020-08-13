@@ -33,20 +33,23 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white;
+
 }
 
 p {
     display: block;
-    color: white;
     line-height: 2;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 nav h1, 
 nav ul {
-    font-size: 1.5rem;
     flex: 1;
-    color: turquoise;
-}
+    font-family: "Work Sans";}
 
 nav ul {
     list-style: none;
@@ -58,6 +61,7 @@ nav ul {
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 li {
@@ -121,12 +125,6 @@ section p {
 
 /* #################### HIDDEN #################### */
 
-/* .grid-fit {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;      
-} */
-
 #hidden-cogito {
     width: 100vw;
     height: 100vh;
@@ -139,9 +137,29 @@ section p {
     opacity: 0;
     transition: opacity 1s ease;
 }
-
-#profile-pic {
-    grid-area: 2 / 2 / 5 / 4;
+.grid-fit {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;      
+}
+#profile-pic { 
+    grid-area: 2 / 2 / 5 / 4 
+}
+#profile-text { 
+    grid-area: 5 / 5 / 2 / 8;
+    color: black;
+    font-family: 'Work Sans';
+    font-size: 1.5rem;
+}
+#profile-resume {
+    grid-area: 3 / 4 / 5 / 6;
+    margin-top: 2.5rem;
+    justify-self: center;
+    z-index: 2;
+    font-size: 3rem;
+    font-family: "Work Sans";
+    font-weight: 900;
+    text-decoration: none;
 }
 
 

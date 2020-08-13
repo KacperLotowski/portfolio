@@ -19,8 +19,8 @@ function navCheck(entries){
         const gradientIndex = entry.target.getAttribute('data-index');
         const coords = activeAnchor.getBoundingClientRect();
         const directions = {
-            height: 20,
-            width: 20,
+            height: 30,
+            width: 30,
             top: coords.top,
             left: coords.left
         };
@@ -49,7 +49,7 @@ function unhide() {
 
     dictionaryCogito.addEventListener('mouseenter', () => {
         hiddenCogito.style.opacity = '1'
-        hiddenCogito.style.background = "linear-gradient(to right top, #0f6596, #20257d)"
+        hiddenCogito.style.background = "#ffffff"
     });
     dictionaryCogito.addEventListener('mouseleave', () => {
         hiddenCogito.style.opacity = '0'
