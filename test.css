@@ -124,8 +124,8 @@ a {
     color: rgba(0, 0, 0, 0.5);
     font-family: "Work Sans", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 0.0875rem;
-    font-size: 10px;
+    letter-spacing: 0.04rem;
+    font-size: 12px;
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
 }
 .side:hover {
@@ -152,7 +152,7 @@ a {
     word-spacing: 0.5rem;
 }
 .side .top {
-    top: 25px;
+    top: 30px;
     text-align: right;
     color: black;
 }
@@ -236,10 +236,14 @@ a {
 }
 .section .section__inner {
     height: 100%;
-    max-width: 800px;
+    max-width: 750px;
     margin: auto auto auto 0;
 }
-
+.section .section__inner2 {
+    height: 100%;
+    max-width: 1500px;
+    margin: auto auto auto 0;
+}
 .card {
     background-color: white;
     border: 1rem solid white;
@@ -251,7 +255,7 @@ a {
     text-decoration: underline solid #FBC403;
 }
 .section.section--hello {
-    background-color: #fdef52;
+    background-color: #FFDF64;
     color: #181818;
 }
 .section.section--profile {
@@ -266,11 +270,11 @@ a {
     fill: #ffefc2;
 }
 .section.section--education {
-    background-color: #343436;
+    background-color: #625772;
     color: white;
 }
 .section.section--education svg {
-    fill: #343436;
+    fill: #625772;
 }
 .section.section--portfolio {
     background-color: orange;
@@ -285,12 +289,12 @@ a {
     bottom: -50px;
 }
 .section.section--portfolio1 {
-    background-color: #3a99d8;
-    color: white;
+    background-color: #f38181;
+    color: black;
 }
 .section.section--portfolio1 svg {
     top: -50px;
-    fill: #3a99d8;
+    fill: #f38181;
 }
 .section.section--pepperhill svg {
     top: -50px;
@@ -303,7 +307,7 @@ a {
 h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
     font-family: "Work Sans", sans-serif;
     font-weight: bold;
-    margin: 0 0 1em;
+    /* margin: 0 0 1em; */
     line-height: 1;
     letter-spacing: -1px;
 }
@@ -336,6 +340,10 @@ h2, .h2 {
     h2, .h2 {
         font-size: 2.5rem;
    }
+}
+.subtitle {
+    margin-bottom: 3rem;
+
 }
 .pre {
     display: inline-block;
@@ -395,6 +403,24 @@ p a:hover {
     .portfolio.block {
         width: 30%;
    }
+}
+.section .section--portfolio1 .block {
+    max-width: 1400px !important;
+}
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flexbox .card {
+    width: 10rem;
+    margin-right: 1rem;
+}
+.card li {
+    list-style: none;
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 0.3rem;
 }
 .portfolio .link {
     display: block;
