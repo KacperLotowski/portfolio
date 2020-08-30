@@ -251,8 +251,9 @@ a {
     margin-bottom: 1.5rem;
     box-shadow: 1rem 1rem 0rem 0rem rgba(0,0,0,0.75);
 }
-.card h2 {
+.card h2, .flexbox .lead {
     text-decoration: underline solid #FBC403;
+    font-weight: bold;
 }
 .section.section--hello {
     background-color: #FFDF64;
@@ -343,7 +344,8 @@ h2, .h2 {
 }
 .subtitle {
     margin-bottom: 3rem;
-
+    font-weight: 400;
+    font-size: 25px;
 }
 .pre {
     display: inline-block;
@@ -404,6 +406,13 @@ p a:hover {
         width: 30%;
    }
 }
+.section--profile h1 {
+    margin-bottom: 2.5rem;
+    font-size: 100px;
+}
+.section--profile p {
+    font-weight: 30;
+}
 .section .section--portfolio1 .block {
     max-width: 1400px !important;
 }
@@ -418,7 +427,7 @@ p a:hover {
 }
 .card li {
     list-style: none;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 25px;
     margin-bottom: 0.3rem;
 }

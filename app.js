@@ -66,8 +66,3 @@ function unhide() {
 };
 
 unhide();
-
-
-
-
-
