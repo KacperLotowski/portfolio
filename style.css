@@ -87,13 +87,12 @@ section p {
 .video { background: linear-gradient(to top, #aa076b, #61045f) }
 .audio { background: linear-gradient(to top, #7cf7a9, #1d976c) }
 
-.bubble {
+.square {
   position: absolute;
   z-index: -2;
   opacity: 1;
-  /* filter: blur(30px); */
   transition: all 0.5s;
-  animation:rotate 1s linear 0s infinite normal;
+  animation:rotate 5s linear 0s infinite normal;
 }
 
   @-webkit-keyframes rotate {
@@ -111,38 +110,14 @@ section p {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  display: grid;
-  grid-template-columns: 2vw 1fr 1fr 1fr 1fr 1fr 1fr 2vw;
-  grid-template-rows: 2vw 1fr 1fr 1fr 1fr 2vw;
-  column-gap: 10px;
-  row-gap: 10px;      
   opacity: 0;
   transition: opacity 1s ease;
 }
 #cogito-pic { 
-  grid-area: 2 / 2 / 5 / 4;
   object-fit: fill;
   width: 100%;
   max-height: 100%;
 }
-#profile-text { 
-  grid-area: 5 / 5 / 2 / 8;
-  color: black;
-  font-family: 'Work Sans';
-  font-size: 1.5rem;
-}
-#profile-resume {
-  grid-area: 3 / 4 / 5 / 6;
-  margin-top: 2.5rem;
-  justify-self: center;
-  z-index: 2;
-  font-size: 3rem;
-  font-family: "Work Sans";
-  font-weight: 900;
-  text-decoration: none;
-}
-
-
 #hidden-video {
   width: 100vw;
   height: 100vh;
@@ -150,63 +125,4 @@ section p {
   object-fit: cover;
   opacity: 0;
   transition: opacity 1s ease;
-}
-
-
-
-/* ################################################ */
-/* #################### RESUME #################### */
-/* ################################################ */
-
-.cv-top {
-  display: grid;
-  height: 50vh;
-  width: 100vw;
-  grid-template-columns: 1fr 10fr 1fr 6fr 2fr 8fr;
-  grid-template-rows: 1fr 2fr 2fr;
-}
-
-#bg-top {
-  width: 100%;
-  height: 100%;
-  grid-area: 1 / 1 / 3 / 7;
-  background-color: black;
-  border-bottom: 5px solid #FBC403
-}
-#profile-pic {
-  grid-area: 2 / 2 / 4 / 3;
-  object-fit: contain;
-  object-position: right top;
-  width: 100%;
-  max-height: 100%;
-  z-index: 1;
-}
-#text-top { 
-  grid-area: 2 / 4 / 3 / 7; 
-  color: white; 
-  font-family: 'Work Sans' 
-}
-
-#left-slips {
-  grid-area: 3 / 3 / 4 / 5;
-  display: grid;
-  align-content: space-evenly;
-  text-align: right;
-}
-#right-slips {
-  grid-area: 3 / 6 / 4 / 7;
-  display: grid;
-  align-content: space-evenly;
-}
-.slip {
-  height: 40px;
-  display: flex;
-  background-color: black;
-  color: white;
-  font-family: 'Work Sans';
-  font-size: 1.5rem;
-  align-items: center;
-}
-.slip img {
-  height: 100%; 
 }
