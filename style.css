@@ -13,7 +13,7 @@ html {
 
 
 header {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
   background: rgb(0, 0, 0);
@@ -71,10 +71,11 @@ section {
   z-index: 1;
   cursor: pointer
 }
-section h2 {
+.dictionary a {
   font-size: 5rem;
   font-weight: 700;
-  color: white
+  color: white;
+  text-decoration: none;
 }
 section p {
   font-size: 15px;
@@ -112,11 +113,14 @@ section p {
   position: absolute;
   opacity: 0;
   transition: opacity 1s ease;
+  background: black;
 }
 #cogito-pic { 
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   max-height: 100%;
+  opacity: 0.5;
+  filter: blur(10px)
 }
 #hidden-video {
   width: 100vw;

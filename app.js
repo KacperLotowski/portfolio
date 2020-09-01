@@ -49,7 +49,6 @@ function unhide() {
 
     dictionaryCogito.addEventListener('mouseenter', () => {
         hiddenCogito.style.opacity = '1'
-        hiddenCogito.style.background = "#ffffff"
     });
     dictionaryCogito.addEventListener('mouseleave', () => {
         hiddenCogito.style.opacity = '0'
