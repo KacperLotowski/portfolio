@@ -1,6 +1,15 @@
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
+html::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+
 
 * {
   margin: 0;
@@ -86,7 +95,7 @@ section p {
 
 .cogito { background: linear-gradient(to top, #1488cc, #2b32b2) }
 .video { background: linear-gradient(to top, #aa076b, #61045f) }
-.audio { background: linear-gradient(to top, #7cf7a9, #1d976c) }
+.audio { background: linear-gradient(to top, #53e98a, #1a835e) }
 
 .square {
   position: absolute;
