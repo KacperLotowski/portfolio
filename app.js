@@ -40,24 +40,42 @@ sections.forEach(section => {
 
 function unhide() {
     
-    let hiddenCogito = document.getElementById('hidden-cogito');
-    let dictionaryCogito = document.getElementsByClassName('dictionary')[0];
+    let hidden = document.getElementsByClassName('hidden-section');
+    let showSvg = document.getElementsByClassName('svg-show');
+    let dictionary = document.getElementsByClassName('dictionary');
     let hiddenVideo = document.getElementById('hidden-video');
-    let dictionaryVideo = document.getElementsByClassName('dictionary')[1];
-    // let unhideAudio = document.getElementById('hidden-audio');
-    // let hoverAudio = document.getElementsByClassName('dictionary')[0];
 
-    dictionaryCogito.addEventListener('mouseenter', () => {
-        hiddenCogito.style.opacity = '1'
+    dictionary[0].addEventListener('mouseenter', () => {
+        hidden[0].style.opacity = '1'
+        showSvg[0].style.margin = '0'
     });
-    dictionaryCogito.addEventListener('mouseleave', () => {
-        hiddenCogito.style.opacity = '0'
+    dictionary[0].addEventListener('mouseleave', () => {
+        hidden[0].style.opacity = '0'
+        showSvg[0].style.margin = '0 0 0 -100px'
     });
-    dictionaryVideo.addEventListener('click', () => {
+
+    dictionary[1].addEventListener('mouseenter', () => {
+        hidden[1].style.opacity = '1'
+    });
+    dictionary[1].addEventListener('mouseleave', () => {
+        hidden[1].style.opacity = '0'
+    });
+    dictionary[1].addEventListener('click', () => {
         hiddenVideo.style.opacity = '1'
         hiddenVideo.style.zIndex = '1'
         hiddenVideo.play()
     });
+
+    dictionary[2].addEventListener('mouseenter', () => {
+        hidden[2].style.opacity = '1'
+    });
+    dictionary[2].addEventListener('mouseleave', () => {
+        hidden[2].style.opacity = '0'
+    });
+
+      
+
+
 
     // hoverAudio.addEventListener('mouseenter', () => {unhideCogito.style.zIndex = '1'; unhideAudio.style.opacity = '1'});
     // hoverAudio.addEventListener('mouseleave', () => {unhideCogito.style.zIndex = '0'; unhideAudio.style.opacity = '0'});
