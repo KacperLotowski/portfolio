@@ -78,19 +78,22 @@ section {
 
 .dictionary {
   z-index: 1;
-  cursor: pointer
+  cursor: pointer;
 }
 .dictionary a {
+  font-family: Tinos;
   font-size: 5rem;
   font-weight: 700;
   color: white;
   text-decoration: none;
 }
 section p {
+  font-family: Tinos;
   font-size: 15px;
-  font-weight: 400;
   color: white;
   line-height: 20px;
+  font-weight: 100
+
 }
 
 .cogito { background: linear-gradient(to top, #1488cc, #2b32b2) }
@@ -121,7 +124,6 @@ section p {
   height: 100vh;
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
   opacity: 0;
   transition: opacity 1s ease;
@@ -130,7 +132,7 @@ section p {
 .svg-show {
   width: 100px;
   height: 100px;
-  position: relative;
+  position: absolute;
   filter: invert(100);
   margin-left: -100px;
   transition: margin 500ms ease;

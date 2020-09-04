@@ -19,8 +19,8 @@ function navCheck(entries){
         const gradientIndex = entry.target.getAttribute('data-index');
         const coords = activeAnchor.getBoundingClientRect();
         const directions = {
-            height: 30,
-            width: 30,
+            height: 25,
+            width: 25,
             top: coords.top,
             left: coords.left
         };
@@ -56,9 +56,11 @@ function unhide() {
 
     dictionary[1].addEventListener('mouseenter', () => {
         hidden[1].style.opacity = '1'
+        showSvg[1].style.margin = '0'
     });
     dictionary[1].addEventListener('mouseleave', () => {
         hidden[1].style.opacity = '0'
+        showSvg[1].style.margin = '0 0 0 -100px'
     });
     dictionary[1].addEventListener('click', () => {
         hiddenVideo.style.opacity = '1'
@@ -68,9 +70,11 @@ function unhide() {
 
     dictionary[2].addEventListener('mouseenter', () => {
         hidden[2].style.opacity = '1'
+        showSvg[2].style.margin = '0'
     });
     dictionary[2].addEventListener('mouseleave', () => {
         hidden[2].style.opacity = '0'
+        showSvg[2].style.margin = '0 0 0 -100px'
     });
 
       
