@@ -4,38 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,300,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./test.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400,900&display=swap" rel="stylesheet">
     <title>Resume</title>
 </head>
+
 <body>
-    <div class="cv-top">
-        <div id="bg-top"></div>
-        <img id='profile-pic' src="./Media/Cogito1.jpg" alt="Profile Picture">
-        <div id='text-top'>
-            <h1 style='font-size: 3rem; font-weight: 900'>KACPER ŁOTOWSKI</h1>
-            <h3 style='font-size: 1.5rem; font-weight: 100'>FRONT-END DEVELOPER</h3>    
+
+<nav class="side">
+    <div class="side__inner">
+        <div class="top"><a href="index.html">Portfolio</a></div>
+        <div class="bottom">
+            <a href="mailto:kacper.lotowski@gmail.com">EMAIL</a>
+            <a href="https://github.com/KacperLotowski">GITHUB</a>
+            <a href="https://linkedin.com/in/kacperlotowski">LINKEDIN</a>
         </div>
-        <div id="left-slips">
-            <div class='slip'>
-                <img src="./Media/phone.png" alt=""></img>
-                <p>+48 783 024 144</p>
-            </div>
-            <div class='slip'>
-                <img src="./Media/location.png" alt="">
-                <p>Wrocław, PL</p>
-            </div>
+    </div>
+</nav>
+
+<section class="section section--hello" id="hello">
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#profile"><span>></span>Resume</a>
+            <h2>KACPER ŁOTOWSKI</h2>
+            <p class="subtitle">FRONT-END DEVELOPER</p>
+            <ul class="anchornav">
+                <li><a href="#profile">Profile <span><i>noun</i> | a concise biographical sketch</span></a></li>
+                <li><a href="#experience">Experience <span><i>noun</i> | the fact or state of having been affected by or gained knowledge through direct observation or participation</span></a></li>
+                <li><a href="#education">Education <span><i>noun</i> | the field of study that deals mainly with methods of teaching and learning in schools</span></a></li>
+                <li><a href="#portfolio">Skills <span><i>noun</i> | the ability to use one's knowledge effectively and readily in execution or performance</span></a></li>
+                <li><a href="#contact">Contact <span><i>verb</i> | to get in communication with</span></a></li>
+            </ul>
         </div>
-        <div id="right-slips">
-            <div class='slip'>
-                <img src="./Media/contact.png" alt="">
-                <p>kacper.lotowski@gmail.com</p>
+    </div>
+</section>
+
+<section class="section section--profile" id="profile">
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#profile"><span>></span>Profile</a>
+            <h1>,,</h1>
+            <p class='lead'>Curious and creative front-end developer with an analytic mindset and great sense of aesthetics. Over 5 years of working in tech-oriented projects including translation of business needs to technical terms. Proven track of process improvement and automation using Lean Six Sigma methodology.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section section--experience" id="experience">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="100 0 100 10 0 10" />
+    </svg>
+
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#experience"><span>></span>Experience</a>
+            <div class="card">
+                <p class="lead">2020 - present</p>
+                <h2>Developer</h2>
+                <p class="subtitle">FREELANCING</p>
+                <p class="lead">Creating resposive websites including a project for a fashion brand with built-in online store.</p>
+                <p class="lead">Smaller app projects in React Native including mobile app that tracks break time during work and calculates the profits using a real time FX rates as well as The Economist's Big Mac Index via API call.</p>
+                <p class="lead">Part of open source communities: Ava JS and Programmers Only App.</p>    
             </div>
-            <div class='slip'>
-                <img src="./Media/code.png" alt="">
-                <p>github.com/KacperLotowski</p>
+            <div class="card">
+                <p class="lead">2018 - present</p>
+                <h2>Blackrock</h2>
+                <p class="subtitle">TECHNOLOGY & OPERATIONS</p>
+                <p class="lead">Managing implementation projects for investment funds and subproducts (Recent $1.8bn save leading a streamlined launch of a bespoke product for a client).</p>
+                <p class="lead">Leading 10+ process improvement initiatives within Tech & Ops department as a certified lean six sigma black belt (i.e. reducing review time of share class launches by 75%; Automation of  90% (over 350) data points used in external data providers’ reports).</p>
+                <p class="lead">Leading a front-end Hackaton project (capturing static data from regulatory documents and building a dedicated front-end platform).</p>    
+            </div>
+            <div class="card">
+                <p class="lead">2015 - 2018</p>
+                <h2>BNY Mellon</h2>
+                <p class="subtitle">ALTERNATIVE INVESTMENT SERVICES</p>
+                <p class="lead">Coordinating the work of internal stakeholders to set up new investors’ profiles in internal systems and processing their documentation.</p>
+                <p class="lead">Regression / validation testing of system enhancements.</p>
+                <p class="lead">System conversions – data reconciliation and confirming changes with the client.</p>    
+            </div>
+            <div class="card">
+                <p class="lead">2011 - 2017</p>
+                <h2>Kampus TV</h2>
+                <p class="subtitle">TELEVISION PRODUCTION</p>
+                <p class="lead">Recording and editing of news and reports.</p>
+                <p class="lead">Animations and video post-production.</p>
             </div>
         </div>
     </div>
+
+</section>
+
+<section class="section section--education" id="education">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+        <polygon points="100 10 0 0 0 10" />
+    </svg>
+
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#education"><span>></span>Education</a>
+            <p class="lead">2010 - 2015</p>
+            <h2>University of Wrocław</h2>
+            <p class="subtitle">FACULTY OF LAW</p>
+            <p class="lead">Master's thesis: Personality rights on the Internet</p>
+            <p class="lead">Participant of Summer School of ICT and IT Law.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="section section--portfolio1" id="portfolio">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+    </svg>
+
+    <div class="section__inner2">
+        <div class="block">
+            <a class="pre" href="#portfolio"><span>></span>Skills</a>
+            <div class="flexbox">
+                <div class="card">
+                    <p class="lead">Programming</p>
+                    <ul>
+                        <li>JavaScript ES6</li>
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>HTML5</li>
+                        <li>CSS 3</li>
+                        <li>GIT</li>    
+                    </ul>
+                </div>
+                <div class="card">
+                    <p class="lead">Other Skills</p>
+                    <ul>
+                        <li>Adobe After Effects</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Adobe Illustarator</li>
+                        <li>iGrafx</li>
+                        <li>Microsoft Office</li>
+                    </ul>    
+                </div>    
+                <div class="card">
+                    <p class="lead">Languages</p>
+                    <ul>
+                        <li>Polish (native)</li>
+                        <li>English (fluent)</li>
+                        <li>French (basic)</li>
+                    </ul>    
+                </div>    
+                <div class="card">
+                    <p class="lead">Certificates</p>
+                    <ul>
+                        <li>Lean Six Sigma Black Belt</li>
+                        <li>Lean Six Sigma Green Belt</li>
+                    </ul>    
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--contact" id="contact">
+    <div class="section__inner">
+        <div class="block">
+            <a class="pre" href="#contact"><span>></span>Contact</a>
+            <h2>Reach out to me:<br>
+                <span><a href="mailto:kacper.lotowski@gmail.com">kacper.lotowski@gmail.com</a></span></h2>
+            <p class="lead">Or check my profiles on <a href="https://github.com/KacperLotowski">GitHub</a> and <a href="https://linkedin.com/in/kacperlotowski">Linkedin</a>.</p>
+        </div>
+    </div>
+</section>
 
 </body>
