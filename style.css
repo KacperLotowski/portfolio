@@ -149,7 +149,7 @@ section {
 }
 a {
   text-decoration: none;
-  color: #f38181;
+  color: inherit;
 
 }
 
