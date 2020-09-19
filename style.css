@@ -31,23 +31,14 @@ header {
   align-items: center;
   justify-content: space-between;
   color: white;
-
-}
-
-.nav-text {
-  flex: 1;
 }
 
 nav ul {
+  width: 50vw;
   list-style: none;
-  font-weight: 500;
+  font-weight: 200;
   display: flex;
   justify-content: space-between;
-}
-
-.nav-text a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
 }
 
 .nav-text li {
@@ -158,6 +149,8 @@ section {
 }
 a {
   text-decoration: none;
+  color: #f38181;
+
 }
 
 .side {
@@ -381,6 +374,9 @@ a {
   margin-right: 0.4em;
   opacity: 0.5;
 }
+.pre a {
+  color: black !important;
+}
 .pre:hover {
   opacity: 1;
 }
@@ -396,7 +392,7 @@ a {
 .pre, .side, .anchornav a {
   font-size: 0.75rem;
 }
-.subtitle, .lead, .card li, .nav-text a {
+.subtitle, .lead, li, .nav-text a {
   font-size: 1.7rem;
 }
 #portfolio .block {
