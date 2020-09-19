@@ -1,20 +1,14 @@
 html {
+  font-family: "Work Sans", sans-serif;
   scroll-behavior: smooth;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  box-sizing: border-box;
 }
 html::-webkit-scrollbar { /* WebKit */
   width: 0;
   height: 0;
-}
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* #################### NAVBAR #################### */
@@ -29,7 +23,7 @@ header {
   z-index: 2;
 }
 
-nav {
+.index-nav {
   min-height: 10vh;
   margin: auto;
   width: 90%;
@@ -40,10 +34,9 @@ nav {
 
 }
 
-nav h1, 
-nav ul {
+.nav-text {
   flex: 1;
-  font-family: "Work Sans";}
+}
 
 nav ul {
   list-style: none;
@@ -52,13 +45,12 @@ nav ul {
   justify-content: space-between;
 }
 
-nav a {
+.nav-text a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 1.5rem;
 }
 
-li {
+.nav-text li {
   height: 30px;
   width: 30px;
 }
@@ -87,7 +79,7 @@ section {
   color: white;
   text-decoration: none;
 }
-section p {
+.dictionary p {
   font-family: Tinos;
   font-size: 15px;
   color: white;
@@ -158,113 +150,8 @@ section p {
 
 /* ----------------------------------------------- RESUME */
 
-html {
-  box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
-  color: #555;
-  font-size: 16px;
-}
-@media (min-width: 6.25em) {
-  html {
-      font-size: 17px;
- }
-}
-@media (min-width: 12.5em) {
-  html {
-      font-size: 18px;
- }
-}
-@media (min-width: 18.75em) {
-  html {
-      font-size: 19px;
- }
-}
-@media (min-width: 25em) {
-  html {
-      font-size: 20px;
- }
-}
-@media (min-width: 31.25em) {
-  html {
-      font-size: 21px;
- }
-}
-@media (min-width: 37.5em) {
-  html {
-      font-size: 22px;
- }
-}
-@media (min-width: 43.75em) {
-  html {
-      font-size: 23px;
- }
-}
-@media (min-width: 50em) {
-  html {
-      font-size: 24px;
- }
-}
-@media (min-width: 56.25em) {
-  html {
-      font-size: 25px;
- }
-}
-@media (min-width: 62.5em) {
-  html {
-      font-size: 26px;
- }
-}
-@media (min-width: 68.75em) {
-  html {
-      font-size: 27px;
- }
-}
-@media (min-width: 75em) {
-  html {
-      font-size: 28px;
- }
-}
-@media (min-width: 81.25em) {
-  html {
-      font-size: 29px;
- }
-}
-@media (min-width: 87.5em) {
-  html {
-      font-size: 30px;
- }
-}
-@media (min-width: 93.75em) {
-  html {
-      font-size: 31px;
- }
-}
-@media (min-width: 100em) {
-  html {
-      font-size: 32px;
- }
-}
-@media (min-width: 106.25em) {
-  html {
-      font-size: 33px;
- }
-}
-@media (min-width: 112.5em) {
-  html {
-      font-size: 34px;
- }
-}
-@media (min-width: 118.75em) {
-  html {
-      font-size: 35px;
- }
-}
-@media (min-width: 125em) {
-  html {
-      font-size: 36px;
- }
-}
-*, *::before, *::after {
+
+* {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -272,20 +159,18 @@ html {
 a {
   text-decoration: none;
 }
-/** * The fixed Side */
+
 .side {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 50px;
   border-right: 1px dashed rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.5);
-  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
-  font-size: 12px;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
 }
 .side:hover {
@@ -318,7 +203,7 @@ a {
 }
 .side .bottom {
   top: auto;
-  bottom: 75px;
+  bottom: 100px;
 }
 .side .bottom:hover a {
   color: rgba(0, 0, 0, 0.2);
@@ -326,7 +211,7 @@ a {
 .side .bottom:hover a:hover {
   color: rgba(0, 0, 0, 0.8);
 }
-/** * The first navigation */
+
 .anchornav {
   margin: 0;
   padding: 0;
@@ -348,9 +233,7 @@ a {
 .anchornav a {
   display: block;
   padding: 1em 0;
-  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
-  font-size: 12px;
   letter-spacing: 1.4px;
   color: inherit;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
@@ -360,7 +243,6 @@ a {
   padding: 0.5em 0 0;
   opacity: 0.3;
   letter-spacing: normal;
-  font-family: "Work Sans", serif;
   text-transform: none;
 }
 .anchornav a:hover {
@@ -370,14 +252,13 @@ a {
   opacity: 1;
   color: #181818;
 }
-/** * The different sections */
+
 .section {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: stretch;
   min-height: 60vh;
-  width: 100%;
   align-content: center;
   padding: 20vh 50px 20vh 75px;
 }
@@ -394,6 +275,7 @@ a {
   top: auto;
   fill: grey;
 }
+
 .section .section__inner {
   height: 100%;
   max-width: 750px;
@@ -401,20 +283,40 @@ a {
 }
 .section .section__inner2 {
   height: 100%;
-  max-width: 1500px;
+  width: 100%;
   margin: auto auto auto 0;
 }
 .card {
   background-color: white;
-  border: 1rem solid white;
-  border-radius: 0.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 1rem 1rem 0rem 0rem rgba(0,0,0,0.75);
+  border: 2rem solid white;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 2rem 2rem 0 0 rgba(0,0,0,0.75);
+  line-height: 1.6
 }
-.card h2, .flexbox .lead {
+.card h1, .flexbox h3 {
   text-decoration: underline solid #FBC403;
   font-weight: bold;
 }
+.card h1, .block h1 {
+  font-size: 4.5rem;
+}
+.card li {
+  list-style: none;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexbox .card {
+  width: 20rem;
+  margin-right: 2rem;
+}
+
+/* Sections color layout */
 .section.section--hello {
   background-color: #FFDF64;
   color: #181818;
@@ -457,59 +359,16 @@ a {
   top: -50px;
   fill: #f38181;
 }
-.section.section--pepperhill svg {
-  top: -50px;
-  fill: #3a99d8;
-}
 .section.section--contact svg {
   fill: white;
 }
-/** * Typo */
-h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-  /* margin: 0 0 1em; */
-  line-height: 1;
-  letter-spacing: -1px;
-}
-@media (min-width: 30rem) {
-  h1, .h1, h2, .h2, h3, .h3, h4, .h5 {
-      letter-spacing: -2px;
- }
-}
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h5 a {
-  color: inherit;
-}
-h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h5 a:hover {
-  border-bottom: 0.1875rem solid;
-}
-h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h5 span {
-  color: #de5f5f;
-}
-h1, .h1 {
-  font-size: 1.2rem;
-}
-@media (min-width: 30rem) {
-  h1, .h1 {
-      font-size: 2.5rem;
- }
-}
-h2, .h2 {
-  font-size: 1.2rem;
-}
-@media (min-width: 30rem) {
-  h2, .h2 {
-      font-size: 2.5rem;
- }
-}
+
 .subtitle {
   margin-bottom: 3rem;
   font-weight: 400;
-  font-size: 25px;
 }
 .pre {
   display: inline-block;
-  font-size: 12px;
   margin: 0;
   opacity: 0.8;
   letter-spacing: 1.4px;
@@ -519,89 +378,37 @@ h2, .h2 {
   color: inherit;
 }
 .pre span {
-  font-size: 0.9em;
   margin-right: 0.4em;
   opacity: 0.5;
 }
 .pre:hover {
   opacity: 1;
 }
-p {
-  font-size: 0.75rem;
-  line-height: 1.4;
-}
-@media (min-width: 30rem) {
-  p {
-      font-size: 0.975rem;
- }
-}
-p a {
-  font-weight: bold;
-  color: inherit;
-}
-p a:hover {
-  border-bottom: 0.1875rem solid;
-}
 .lead {
   display: block;
-  font-size: 0.975rem;
-  font-weight: 30;
+  font-weight: 100;
   margin: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
-@media (min-width: 30rem) {
-  .lead {
-      font-size: 1rem;
- }
+.card h3 {
+  font-size: 2rem;
 }
-.portfolio {
+.pre, .side, .anchornav a {
   font-size: 0.75rem;
 }
-.portfolio.block {
+.subtitle, .lead, .card li, .nav-text a {
+  font-size: 1.7rem;
+}
+#portfolio .block {
   display: inline-block;
   width: 100%;
 }
-@media (min-width: 30rem) {
-  .portfolio.block {
-      width: 30%;
- }
-}
 .section--profile h1 {
   margin-bottom: 2.5rem;
-  font-size: 100px;
 }
 .section--profile p {
-  font-weight: 30;
+  font-weight: 100;
 }
 .section .section--portfolio1 .block {
   max-width: 1400px !important;
 }
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.flexbox .card {
-  width: 10rem;
-  margin-right: 1rem;
-}
-.card li {
-  list-style: none;
-  font-weight: 200;
-  font-size: 25px;
-  margin-bottom: 0.3rem;
-}
-.portfolio .link {
-  display: block;
-  margin: 2em 0 0 0;
-  color: #555;
-  letter-spacing: 2px;
-  font-size: 12px;
-}
-.portfolio p {
-  font-size: inherit;
-  color: #343436;
-  opacity: 0.7;
-}
-
-

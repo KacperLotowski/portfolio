@@ -77,13 +77,6 @@ function unhide() {
         showSvg[2].style.margin = '0 0 0 -100px'
     });
 
-      
-
-
-
-    // hoverAudio.addEventListener('mouseenter', () => {unhideCogito.style.zIndex = '1'; unhideAudio.style.opacity = '1'});
-    // hoverAudio.addEventListener('mouseleave', () => {unhideCogito.style.zIndex = '0'; unhideAudio.style.opacity = '0'});
-
 };
 
 unhide();
