@@ -6,14 +6,12 @@ html {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   box-sizing: border-box;
 }
-html::-webkit-scrollbar { /* WebKit */
+html::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
 /* #################### NAVBAR #################### */
-
-
 
 header {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -46,11 +44,7 @@ nav ul {
   width: 30px;
 }
 
-
-
 /* #################### SECTIONS #################### */
-
-
 
 section {
   min-height: 100vh;
@@ -98,8 +92,6 @@ section {
   100%{ transform: rotate(360deg); }
   }
 
-
-
 /* #################### HIDDEN #################### */
 
 .hidden-section {
@@ -139,7 +131,7 @@ section {
 
 
 
-/* ----------------------------------------------- RESUME */
+/* #################### RESUME #################### */
 
 
 * {
